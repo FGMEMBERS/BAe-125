@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim  include="Nasal/views.xml">
+
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <status>development</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <model>
+      <path>Aircraft/BAe-125/Models/bae125.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/BAe-125/bae125-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/BAe-125/Sounds/bae125-sound.xml</path>
+    </sound>
+
+    <flaps>
+      <setting>0.000</setting> <!-- cruise   -->
+      <setting>0.314</setting> <!-- take-off -->
+      <setting>1.000</setting> <!-- landing  -->
+    </flaps>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>BAe 125</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew doors</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/bae125-menu.xml"/>
+
+  </sim>
+
+  <engines>
+    <engine n="0">
+      <running>true</running>
+    </engine>
+    <engine n="1">
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <level-gal_us archive="y">150</level-gal_us>
+      </tank>
+      <tank n="1">
+        <level-gal_us archive="y">50</level-gal_us>
+      </tank>
+      <tank n="3">
+        <level-gal_us archive="y">50</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <input>
+    <keyboard include="Nasal/bae125-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/BAe-125/Nasal/doors.nas</file>
+    </doors>
+    <bae125>
+      <file>Aircraft/BAe-125/Nasal/liveries.nas</file>
+      <file>Aircraft/BAe-125/Nasal/light.nas</file>
+    </bae125>
+  </nasal>
+
+</PropertyList>
+
