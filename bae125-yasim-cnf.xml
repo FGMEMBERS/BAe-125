@@ -4,7 +4,7 @@
 
   <sim>
 
-    <description>bae125 (Yasim) </description>
+    <description>BAe 125 (Yasim) </description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
     <status>development</status>
     <flight-model>yasim</flight-model>

@@ -4,8 +4,17 @@
 <PropertyList include="bae125-yasim-cnf.xml">
 
   <sim>
-    <description>bae125</description>
+
+    <description>BAe 125 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 1 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
   </sim>
 
 </PropertyList>
