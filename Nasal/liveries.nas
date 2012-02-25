@@ -1,2 +1,2 @@
-aircraft.livery.init("Aircraft/HondaJet/Models/Liveries");
+aircraft.livery.init("Aircraft/BAe-125/Models/Liveries");
 
