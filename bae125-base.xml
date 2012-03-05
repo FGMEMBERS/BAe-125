@@ -4,7 +4,7 @@
 
   <sim  include="Nasal/views.xml">
 
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <author>Emmanuel BARANGER (3D/FDM) / Gary BROWN (Liveries)</author>
     <status>development</status>
 
     <fuel-fraction>1.0</fuel-fraction>

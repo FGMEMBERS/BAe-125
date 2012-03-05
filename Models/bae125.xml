@@ -150,6 +150,38 @@
 -->
   </animation>
 
+  <!-- Bump Mapping / Reflect combined
+  <effect>
+    <inherits-from>Aircraft/BAe-125/Models/Effects/BumpMap/bumpspecreflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>spoilerG</object-name>
+    <object-name>spoilerD</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>direction</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>bols</object-name>
+    <object-name>entremoteurs</object-name>
+    <object-name>heliceGA</object-name>
+    <object-name>heliceGB</object-name>
+    <object-name>heliceDA</object-name>
+    <object-name>heliceDB</object-name>
+    <object-name>antennes</object-name>
+    <object-name>porte</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
+  </effect>
+  -->
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
@@ -314,7 +346,7 @@
     </offsets>
   </model>
 
-  <!-- Rotation des hélices des réacteurs -->
+  <!-- Rotation des hÃ©lices des rÃ©acteurs -->
   <animation>
     <type>spin</type>
     <object-name>heliceGA</object-name>
@@ -461,7 +493,7 @@
     </axis>
   </animation>
 
-  <!-- Aérofreins -->
+  <!-- AÃ©rofreins -->
   <animation>
     <type>rotate</type>
     <object-name>spoilerG</object-name>
@@ -523,7 +555,7 @@
     </axis>
   </animation>
 
-  <!-- Rentrée des roues -->
+  <!-- RentrÃ©e des roues -->
   <animation>
     <name>EnsembleAvant</name>
     <object-name>axeAH</object-name>
@@ -724,6 +756,138 @@
     <axis>
       <x> -1 </x>
       <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Compression -->
+  <animation>
+    <name>TrainAvant</name>
+    <object-name>roueA</object-name>
+    <object-name>axeAB</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>TrainAvant</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>TrainGauche</name>
+    <object-name>roueG</object-name>
+    <object-name>axeGB</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainGauche</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>TrainDroite</name>
+    <object-name>roueD</object-name>
+    <object-name>axe2D</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainDroite</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <name>RoueAvant</name>
+    <object-name>roueA</object-name>
+    <object-name>axeAH</object-name>
+    <object-name>axeAB</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueAvant</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 20 </factor>
+    <center>
+      <x-m> -5.271 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.236 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -5.271 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.236 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.367 </x-m>
+      <y-m> -1.501 </y-m>
+      <z-m> -2.238 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.367 </x-m>
+      <y-m> -1.501 </y-m>
+      <z-m> -2.238 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
       <z>  0 </z>
     </axis>
   </animation>
