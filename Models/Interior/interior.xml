@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporte</object-name>
+    <object-name>planchet</object-name>
+    <object-name>cloisons</object-name>
+    <object-name>sieges</object-name>
+    <object-name>tableG1</object-name>
+    <object-name>tableG2</object-name>
+    <object-name>tableD1</object-name>
+    <object-name>trousgobelets</object-name>
+    <object-name>ajout</object-name>
+    <object-name>soufles</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/BAe-125/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.803 </x-m>
+      <y-m> -0.409 </y-m>
+      <z-m> -0.294 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planches de bord -->
+  <model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -5.381 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.101 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Porte -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intporte</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 130 </factor>
+    <center>
+      <x-m> -3.532 </x-m>
+      <y-m> -0.502 </y-m>
+      <z-m> -1.254 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="bae125-jsbsim-cnf.xml"> -->
+<PropertyList include="bae125-yasim-cnf.xml">
+
+  <sim>
+
+    <description>BAe 125 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM) / Gary BROWN (Liveries)</author>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 1 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

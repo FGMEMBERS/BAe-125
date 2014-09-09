@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="bae125-base.xml">
+
+  <sim>
+
+    <description>BAe 125 (Yasim) </description>
+    <author>Emmanuel BARANGER (3D/FDM) / Gary BROWN (Liveries)</author>
+    <status>development</status>
+    <flight-model>yasim</flight-model>
+    <aero>bae125-yasim</aero>
+
+  </sim>
+
+</PropertyList>
+
