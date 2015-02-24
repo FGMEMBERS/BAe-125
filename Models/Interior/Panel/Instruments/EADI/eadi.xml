@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -24,6 +24,7 @@
     <object-name>ASI.1</object-name>
     <object-name>nav.ind</object-name>
     <object-name>hdg.ind</object-name>
+    <object-name>gps.ind</object-name>
     <object-name>vs.ind</object-name>
     <object-name>alt.ind</object-name>
     <object-name>ALT.10000</object-name>
@@ -71,6 +72,7 @@
     <object-name>ASI.1</object-name>
     <object-name>nav.ind</object-name>
     <object-name>hdg.ind</object-name>
+    <object-name>gps.ind</object-name>
     <object-name>vs.ind</object-name>
     <object-name>alt.ind</object-name>
     <object-name>ALT.10000</object-name>
@@ -477,6 +479,18 @@
             </equals>
     </condition>
 </animation>
+
+<animation>
+    <type>select</type>
+    <object-name>gps.ind</object-name>
+    <condition>
+        <equals>
+            <property>autopilot/locks/heading</property>
+            <value>true-heading-hold</value>
+            </equals>
+    </condition>
+</animation>
+
 
 <animation>
     <type>select</type>

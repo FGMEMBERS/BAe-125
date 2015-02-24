@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <sim  include="Nasal/views.xml">
 
-    <author>Emmanuel BARANGER (3D/FDM) / Gary BROWN (Liveries)</author>
+    <author>Emmanuel BARANGER (3D/FDM) / Gary BROWN (Liveries) / Darren ERICKSON (Additional Instrumentation / Fuel / Views)</author>
     <status>development</status>
 
     <fuel-fraction>1.0</fuel-fraction>
@@ -77,13 +77,13 @@
   <consumables>
     <fuel>
       <tank n="0">
-        <level-gal_us archive="y">150</level-gal_us>
+        <level-gal_us archive="y">507</level-gal_us>
       </tank>
       <tank n="1">
-        <level-gal_us archive="y">50</level-gal_us>
+        <level-gal_us archive="y">169</level-gal_us>
       </tank>
       <tank n="3">
-        <level-gal_us archive="y">50</level-gal_us>
+        <level-gal_us archive="y">169</level-gal_us>
       </tank>
     </fuel>
   </consumables>
@@ -92,15 +92,43 @@
     <keyboard include="Nasal/bae125-keyboard.xml"/>
   </input>
 
-  <nasal>
-    <doors>
-      <file>Aircraft/BAe-125/Nasal/doors.nas</file>
-    </doors>
-    <bae125>
-      <file>Aircraft/BAe-125/Nasal/liveries.nas</file>
-      <file>Aircraft/BAe-125/Nasal/light.nas</file>
-    </bae125>
-  </nasal>
+	<!-- initializing helps -->
+	<!-- setting VS initially to 0, alt set to 1000 (min according to animation) -->
+	<autopilot>
+		<settings>
+			<vertical-speed-fpm type="double">0</vertical-speed-fpm>
+			<vertical-speed-abs type="double">0</vertical-speed-abs>
+			<target-altitude-ft type="double">1000</target-altitude-ft>
+		</settings>
+	</autopilot>
+	<!-- start with parking brake on so that we don't roll accidentally off and way -->
+	<controls>
+		<gear>
+			<brake-parking type="double">1</brake-parking>>
+		</gear>
+	</controls>
+	<!-- This plane uses the deprecated hardcoded ellectrical system, so to work around, create 28V power for the comms -->
+	<systems>
+		<electrical>
+			<outputs>
+				<comm n="0">28</comm>
+				<comm n="1">28</comm>
+			</outputs>
+		</electrical>
+	</systems>
+
+	<nasal>
+		<doors>
+			<file>Aircraft/BAe-125/Nasal/doors.nas</file>
+		</doors>
+		<bae125>
+			<file>Aircraft/BAe-125/Nasal/liveries.nas</file>
+			<file>Aircraft/BAe-125/Nasal/light.nas</file>
+		</bae125>
+		<otto>
+			<file>Aircraft/BAe-125/Nasal/otto.nas</file>
+		</otto>
+	</nasal>
 
 </PropertyList>
 

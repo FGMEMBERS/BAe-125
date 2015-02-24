@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -42,5 +42,359 @@
     </offsets>
   </model>
 
+  <!-- MODIFIED INSTRUMENT SECTION BEGINS -->
+  
+  <!-- Commo -->
+        <model>
+        <name>Pilot Comm1</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/radio/ctl22-com1.xml</path>
+        <offsets>
+            <x-m>0.024</x-m>
+            <y-m>0.089</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pilot Comm2</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/radio/ctl22-com2.xml</path>
+        <offsets>
+            <x-m>0.024</x-m>
+            <y-m>0.169</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pilot Nav1</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/radio/ctl32-nav1.xml</path>
+        <offsets>
+            <x-m>0.024</x-m>
+            <y-m>0.089</y-m>
+            <z-m>-0.170</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+  
+       <model>
+        <name>Pilot Nav2</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/radio/ctl32-nav2.xml</path>
+        <offsets>
+            <x-m>0.024</x-m>
+            <y-m>0.169</y-m>
+            <z-m>-0.170</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model> 
+
+    <model>
+        <name>Pilot ADF1</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/radio/ctl62.xml</path>
+        <offsets>
+            <x-m>0.024</x-m>
+            <y-m>0.009</y-m>
+            <z-m>-0.250</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+            <model>
+        <path>Aircraft//BAe-125/Models/Interior/Panel/Instruments/swap-nav/swap-nav.xml</path>
+        <offsets>
+            <x-m>0.030</x-m>
+            <y-m>0.005</y-m>
+            <z-m>-0.175</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+    
+    <!-- KLN90 -->
+    <!--
+  <model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/gps/kln90b.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> 0.071 </y-m>
+      <z-m> -0.090 </z-m>
+    </offsets>
+  </model> -->
+
+ 
+    <!-- Six Pack -->
+       <model>
+        <name>Pilot HSI</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/hi/hi.xml</path>
+        <offsets>
+            <x-m>0.035</x-m>
+            <y-m>-0.135</y-m>
+            <z-m>-0.052</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model> 
+    
+        <model>
+        <name>Pilot VOR</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+        <offsets>
+            <x-m>0.040</x-m>
+            <y-m>-0.135</y-m>
+            <z-m>-0.152</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+            <model>
+        <name>Pilot VOR 1</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ki206_1/ki206.xml</path>
+        <offsets>
+            <x-m>0.040</x-m>
+            <y-m>-0.135</y-m>
+            <z-m>-0.255</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+              <model>
+        <name>Pilot AI</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+        <offsets>
+            <x-m>0,023</x-m>
+            <y-m>-0.245</y-m>
+            <z-m>-0.040</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+    <model>
+        <name>Pilot Alt</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/alt/alt1-3d.xml</path>
+        <offsets>
+            <x-m>0.030</x-m>
+            <y-m>-0.240</y-m>
+            <z-m>-0.150</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>    
+    
+   <model>
+        <name>VSI</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/vsi2/vsi.xml</path>
+        <offsets>
+            <x-m>0.035</x-m>
+            <y-m>-0.238</y-m>
+            <z-m>-0.255</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model> 
+    
+<!-- <model>
+      <name>VSI</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+        <offsets>
+            <x-m>0.035</x-m>
+            <y-m>-0.238</y-m>
+            <z-m>-0.255</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model> -->
+    
+    
+    	<model>
+		<path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ASI_big/asi.xml</path>
+		<offsets>
+			<x-m>0.040</x-m>
+			<y-m>-0.530</y-m>
+			<z-m>-0.100</z-m>
+			<pitch-deg>-8</pitch-deg>
+		</offsets>
+	</model>
+    
+    <!-- Autopilot -->
+      <model>
+        <name>apcomm</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ap/apcomm2.xml</path>
+        <offsets>
+            <x-m>0.090</x-m>
+            <y-m>-0.030</y-m>
+            <z-m>0.060</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>   
+    
+
+
+  <model>
+        <name>alt set</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/alt-set/alt-selt.xml</path>
+        <offsets>
+        <x-m>  0.070 </x-m>
+        <y-m> -0.165 </y-m>
+        <z-m> 0.045 </z-m>
+            <pitch-deg>-0</pitch-deg>
+        </offsets>
+    </model>
+
+   <model>
+        <name>ias set</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ias-set/ias-set.xml</path>
+        <offsets>
+            <x-m>0.075</x-m>
+            <y-m>0.160</y-m>
+            <z-m>0.050</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/magcomp/magcompass.xml</path>
+        <offsets>
+            <x-m>-0.050</x-m>
+            <y-m>0.000</y-m>
+            <z-m>0.120</z-m>
+            <pitch-deg>-20</pitch-deg>
+        </offsets>
+    </model>
+    
+  <!-- GPS Experiment -->
+  <!---
+      <animation>
+        <type>pick</type>
+        <object-name>GPS-crs</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/nav/slaved-to-gps</property>
+            </binding>
+        </action>
+         <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>gpsnav</tooltip-id>
+                <label>GPS Navigation: %s</label>
+                <mapping>on-off</mapping>
+                <property>instrumentation/nav/slaved-to-gps</property>
+            </binding>
+        </hovered>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>gps-leg</object-name>
+        <condition>
+            <property>instrumentation/nav/slaved-to-gps</property>
+        </condition>
+    </animation>
+    -->
+    
+    <!--
+            <model>
+        <path>Aircraft//BAe-125/Models/Interior/Panel/Instruments/gps-slave/gps-slave.xml</path>
+        <offsets>
+            <x-m>0.090</x-m>
+            <y-m>0.070</y-m>
+            <z-m>0.035</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model> -->
+    
+  <!--- END OF GPS EXPERIMENT -->
+
+
+<!-- fuel and engines -->
+<model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/Fuel/fuel.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> 0.035 </y-m>
+      <z-m> -0.030 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/Fuel/fuel1.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> 0.115 </y-m>
+      <z-m> -0.030 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+<model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/rpm/rpmN1L.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m> -0.030 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/rpm/rpmN1R.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> -0.030 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/rpm/rpmN2L.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m> -0.100 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/rpm/rpmN2R.xml</path>
+    <offsets>
+      <x-m> 0.035 </x-m>
+      <y-m> 0.200 </y-m>
+      <z-m> -0.100 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>  
+  
+  <!-- Flaps and Gear -->
+   <model>
+  <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/Gear/gear.xml</path>
+  <offsets>
+   <x-m>0.001</x-m>
+   <y-m>0.270</y-m>
+   <z-m>-0.030</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/Gear/park-brake-light.xml</path>
+  <offsets>
+   <x-m>0.003</x-m>
+   <y-m>0.270</y-m>
+   <z-m>-0.100</z-m>
+  </offsets>
+ </model>
+ 
+  <model>
+  <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/Flaps/flaps.xml</path>
+  <offsets>
+			<x-m>0.020</x-m>
+			<y-m>-0.530</y-m>
+			<z-m>-0.225</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+ </model>
+
+  
+    
+    <!-- MODIFIED INSTRUMENT SECTION ENDS -->
 </PropertyList>
 

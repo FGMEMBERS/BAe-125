@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -345,6 +345,24 @@
       <z-m> -2.616 </z-m>
     </offsets>
   </model>
+  
+  <!-- INSTRUMENT SECTION BEGINS -->
+  
+  <!-- Horizon -->
+      <model>
+        <name>Pilot AI</name>
+        <path>Aircraft/BAe-125/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+        <offsets>
+            <x-m>-3.9643</x-m>
+            <y-m>-0.534</y-m>
+            <z-m>0.357</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    
+    
+    
+    <!-- INSTRUMENT SECTION ENDS -->
 
   <!-- Rotation des hélices des réacteurs -->
   <animation>
