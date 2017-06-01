@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- <PropertyList include="bae125-jsbsim-cnf.xml"> -->
 <PropertyList include="bae125-yasim-cnf.xml">
@@ -16,6 +16,10 @@
     </rating>
 
   </sim>
+
+	  <autopilot> <!-- Mk10 Autopilot -->
+        <path>Aircraft/BAe-125/JWOCKY_SYS7_autopilot.xml</path>
+      </autopilot>
 
 </PropertyList>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -15,9 +15,13 @@
           <property>/engines/engine[0]/n2</property>
           <value>50</value>
         </greater-than>
-        <greater-than>
+                <greater-than>
           <property>/position/altitude-ft</property>
           <value>3000</value>
+        </greater-than>
+                <greater-than>
+        <property>/velocities/groundspeed-kt</property>
+        <value>20</value>
         </greater-than>
       </and>
     </condition>
